@@ -20,7 +20,7 @@ I used [quipqiup](https://www.quipqiup.com/) to decode it.
 Hello Julius, Thank you for your support, You can use this key to receive your reward: flag{5um5t1tut10n_1s_k3y}
 ```
 
-![quip image](/image/sample.png)
+![quip image](/datas/quip.png)
 
 Change m by b in flag.
 
@@ -35,8 +35,7 @@ You can use [CyberChef](http://icyberchef.com) to decode the hex and find flag i
 ```
 xxd -r -p <<<"hex_data_here" | grep flag
 ```
-![Garbage image](/image/sample.png)
-
+![Garbage image](/datas/flag_garbage.png)
 
 
 ## Reverse
@@ -45,12 +44,12 @@ xxd -r -p <<<"hex_data_here" | grep flag
 
 I ran the executable to see how it works and that asks me a secret key.
 
-![rev0 image](/image/sample.png)
+![rev0 image](/datas/rev0.png)
 
 So I used ltrace to see more clearly, functions called during execution.
 
-![ltrace image](/image/sample.png)
+![ltrace image](/datas/strace_rev.png)
 
 As I have the secret key I restart the executable and I put it.
 
-![flag_rev image](/image/sample.png)
+![flag_rev image](/datas/flag_rev.png)
