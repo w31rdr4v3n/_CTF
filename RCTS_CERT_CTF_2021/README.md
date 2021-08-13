@@ -102,3 +102,12 @@ data file **[here](datas/data)**
 usbkeyboard data
 ```
 ![pdf image](datas/usbkey.png)
+
+# Mission
+
+### Something Suspicious 
+  Attached file **[here](datas/ftp.log)** and **[here](datas/ssh.log)**
+![Garbage image](datas/startflag.png)
+![Garbage image](datas/endflag.png)
+![Garbage image](datas/start.png)
+![Garbage image](datas/end.png)
