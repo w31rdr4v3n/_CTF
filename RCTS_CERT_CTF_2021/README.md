@@ -116,3 +116,8 @@ And in ssh.log
 And
 
 ![Garbage image](datas/end.png)
+
+
+```bash
+flag{s0m3th1ng_susp1c10us}
+```
