@@ -29,7 +29,7 @@ flag{5ub5t1tut10n_1s_k3y}
 ```
 
 ### Hextraordinary security
-
+Attached file **[here](datas/garbage)**
 You can use [CyberChef](http://icyberchef.com) to decode the hex and find flag inside garbage with CTR+F or use xxd.
 
 ```bash
@@ -41,7 +41,7 @@ xxd -r -p <<<"hex_data_here" | grep flag
 ## Reverse
 
 ### You are not allowed 
-
+Attached file **[here](datas/program)**
 I ran the executable to see how it works and that asks me a secret key.
 
 ![rev0 image](datas/rev0.png)
