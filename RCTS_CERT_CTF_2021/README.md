@@ -1,4 +1,4 @@
-## Crypto
+# Crypto
 
 ### A simple challenge
 
@@ -38,7 +38,7 @@ xxd -r -p <<<"hex_data_here" | grep flag
 ![Garbage image](datas/flag_garbage.png)
 
 
-## Reverse
+# Reverse
 
 ### You are not allowed 
 Attached file **[here](datas/program)**
@@ -53,3 +53,52 @@ So I used ltrace to see more clearly, functions called during execution.
 As I have the secret key I restart the executable and I put it.
 
 ![flag_rev image](datas/flag_rev.png)
+
+
+# Forensic
+
+
+### Hiding in plain sight 
+Attached file **[here](datas/hackerman.png)**
+```bash
+strings hackerman.png | grep flag
+```
+![quip image](datas/hackerman.png)
+
+
+### Welcome to the challenge 
+
+Attached file **[here](datas/rcts_challenge.jpg)**
+
+```bash
+foremost rcts_challenge.jpg
+```
+
+In the output/png directory we find the hidden image.
+
+![hidden image](datas/00000145.png)
+
+
+### About us
+
+Attached file **[here](datas/RCTSCERT-FCCN.pdf)**
+
+```bash
+strings RCTSCERT-FCCN.pdf | grep flag
+```
+![pdf image](datas/aboutus.png)
+
+
+### Keyp it universal
+
+Attached file **[here](datas/capture.pcap)**
+```bash
+tshark -r capture.pcap  -T fields -e usbhid.data -Y "usbhid.data" | sed 's/../:&/g2' > data
+```
+data file **[here](datas/data)**
+
+![pdf image](datas/tshark.png)
+```bash
+usbkeyboard data
+```
+![pdf image](datas/usbkey.png)
