@@ -1,5 +1,5 @@
 # Writeup Pre-qual Hackerlab2021
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|HackerLab](datas/Hackerlab_2021.png)](https://discord.gg/gjxfTScSbB)
 
 ### WELCOME
 
