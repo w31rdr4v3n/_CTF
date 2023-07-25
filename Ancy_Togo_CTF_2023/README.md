@@ -1,10 +1,11 @@
 # Ancy Togo CTF 2023
 
-Follow me on Twitter : [RAVEN AM1](https://twitter.com/w31rdr4v3n/)
+Follow me on Twitter : [RAVEN](https://twitter.com/w31rdr4v3n/)
 
 ## reverse
 
 Binary file: [Here](datas/lab32)
+
 Here's the source code of the main obtained with ghidra.
 
 ![Main](datas/main.png)
@@ -20,7 +21,7 @@ It checks whether the string size is equal to 10, otherwise it stops the program
 
 ![Main](datas/explode.png)
 
-After checking the string size, the ```__s``` string is compared with the code string. If it doesn't match, the program stops.
+After checking the string size, the ```__s``` string is compared with the ```code``` string. If it doesn't match, the program stops.
 Here's the value of the ```code``` string:
 
 ![Main](datas/code.png)
@@ -141,7 +142,7 @@ Then there's the validation function, which checks the order of node values.
 
 To validate, send the values in the following order: ```27 -> 65 -> 12 -> 35 -> 57 -> 75```
 
-J'ai ecrit un code pour le resoudre:
+I've written a code to solve it:
 
 ```python
 from pwn import *
@@ -176,7 +177,7 @@ print(sh.recv().decode())
 
 ## Crypto
 
-File : [Here]()
+File : [Here](datas/Crypto.zip)
 
 I've written this code to extract the n and the e.
 
